@@ -1,61 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="My cool GitHub Pages site">
-  <title>Welcome to My GitHub Page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <header>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </header>
-
-  <main>
-    <section id="home" class="section">
-      <h1>Welcome to My GitHub Pages Site!</h1>
-      <p>This is a cool website I made to showcase my projects and skills.</p>
-      <button id="explore-btn">Explore More</button>
-    </section>
-
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>I'm a passionate developer, building awesome things on GitHub!</p>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>My Projects</h2>
-      <p>Check out some of the cool projects I’ve been working on!</p>
-      <ul>
-        <li><a href="https://github.com/jamescer/osrs-tools">OSRS Tools</a></li>
-      </ul>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>If you want to get in touch, feel free to reach out to me!</p>
-      <a href="mailto:jamesmcerniglia@gmail.com">Email Me</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 My GitHub Page</p>
-  </footer>
-
-  <script>
-    const button = document.getElementById("explore-btn");
-    button.addEventListener("click", function() {
-      window.location.href = "#projects";
-    });
-  </script>
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A modern portfolio showcasing my interests and projects.">
+        <title>James Cer's Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">James Cer</div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to My World</h1>
+                    <p>Developer, Gamer, Powerlifter. Building cool things and leveling up in life.</p>
+                    <button id="explore-btn" class="btn-primary">Explore My Projects</button>
+                </div>
+            </section>
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <p>Hi, I'm James! When I'm not coding, you can find me grinding in RuneScape, playing video games, or lifting heavy at the gym. I love combining my passions to create unique projects and experiences.</p>
+            </section>
+            <section id="projects" class="projects">
+                <h2>My Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h3>RuneScape Tracker</h3>
+                        <p>A web app to track your RuneScape progress and stats.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Gaming Blog</h3>
+                        <p>A blog where I share my thoughts on the latest games and updates.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Gym Planner</h3>
+                        <p>An app to plan and track your workouts and progress in the gym.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Contact Me</h2>
+                <p>Want to collaborate or just say hi? Reach out to me!</p>
+                <a href="mailto:jamesmcerniglia@gmail.com" class="btn-secondary">Email Me</a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 James Cer. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/jamescer" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/jamescer" target="_blank">LinkedIn</a>
+            </div>
+        </footer>
+        <script>
+            const button = document.getElementById("explore-btn");
+            button.addEventListener("click", function() {
+                window.location.href = "#projects";
+            });
+        </script>
+    </body>
 </html>
